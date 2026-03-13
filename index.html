@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeeby Chatbot</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="chat-toggle" id="chatToggle"></button>
+
+  <div class="chat-container" id="chatContainer">
+    <div class="chat-header">🦓 Zeeby - College Assistant</div>
+
+    <div class="chat-body" id="chatBody">
+      <img src="I am zeeby.jpg" alt="Zeeby Intro" class="intro-image" id="introImage">
+
+      <div>
+        <button class="chat-btn" style="margin-top:10px;" onclick="startChat()">Start Chat</button>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+</html>
